@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.zhenyulaw.jf</groupId>
+    <artifactId>jf-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../jf-parent/pom.xml</relativePath>
+  </parent>
+  <artifactId>jf-web-service</artifactId>
+  <packaging>war</packaging>
+  <name>jf-web-servicer</name>
+  
+	<dependencies>
+		
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.zhenyulaw.jf</groupId>
+			<artifactId>jf-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.zhenyulaw.jf</groupId>
+			<artifactId>jf-entity</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.zhenyulaw.jf</groupId>
+			<artifactId>jf-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.zhenyulaw.jf</groupId>
+			<artifactId>jf-service-impl</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>jf-web-service</finalName>
+	</build>
+</project>
